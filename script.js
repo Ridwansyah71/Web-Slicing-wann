@@ -1,10 +1,8 @@
-// Menambahkan class 'sticky' pada navbar saat scroll
 window.addEventListener('scroll', function() {
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-// Scroll Back to Top Button
 let toTop = document.createElement('button');
 toTop.classList.add('back-to-top');
 toTop.innerHTML = '⬆';
@@ -25,7 +23,6 @@ toTop.addEventListener('click', function() {
     });
 });
 
-// Lightbox Image Gallery
 let courseImages = document.querySelectorAll('.course-img');
 courseImages.forEach(img => {
     img.addEventListener('click', function() {
@@ -43,7 +40,6 @@ courseImages.forEach(img => {
     });
 });
 
-// Toggle Navbar for Mobile
 let navbar = document.querySelector('.navbar');
 let toggleButton = document.createElement('button');
 toggleButton.classList.add('navbar-toggle');
